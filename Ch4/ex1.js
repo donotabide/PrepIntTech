@@ -28,3 +28,4 @@ function sumArray(array){
 
 console.log(sumArray(range(1,10)));
 console.log(sumArray(range(5, 2, -1)));
+console.log(sumArray(range(5, -5, -1)));
