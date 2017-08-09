@@ -41,6 +41,16 @@ console.log(correlations.pizza);
 // → 0.068599434
 
 for (var event in correlations){
-  if(correlations[event]>0.1 || correlations<-0.1)
+  
+    if(correlations[event]>0.1 || correlations[event]<-0.1)
     console.log(event + ": " + correlations[event]);
 }
+
+for(var i = 0; i<JOURNAL.length; i++){
+    var entry = JOURNAL[i];
+    if(hasEvent("peanuts", entry) &&
+        !hasEvent("brushed teeth", entry))
+        entry.events.push("peanut teet");
+}
+
+console.log(phi(tableFor("peanut teet", JOURNAL)));
