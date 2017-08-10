@@ -17,7 +17,6 @@ function range(start, end, step){
 }
 
 
-//console.log(range(1, 20));
 
 function sumArray(array){
     var sum = 0;
@@ -25,7 +24,3 @@ function sumArray(array){
         sum+=array[i];
     return sum;
 }
-
-console.log(sumArray(range(1,10)));
-console.log(sumArray(range(5, 2, -1)));
-console.log(sumArray(range(5, -5, -1)));
